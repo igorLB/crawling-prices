@@ -1,0 +1,25 @@
+<h1>Crawlings</h1>
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Craw Date</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Website</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for promotion in promotions %}
+            <tr>
+                <td>{{ promotion.id }}</td>
+                <td>{{ promotion.craw_date }}</td>
+                <td>{{ promotion.product }}</td>
+                <td>{{ promotion.price }}</td>
+                <td>{{ promotion.website }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

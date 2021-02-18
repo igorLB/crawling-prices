@@ -15,6 +15,7 @@ $router->group(null);
 $router->get('/home', "HomeController:index", 'home.index');
 $router->get('/suporte', "HomeController:suporte", 'home.suporte');
 $router->get('/craw', 'HomeController:crawling', 'home.crawling');
+$router->get('/listar', 'HomeController:listar', 'home.listar');
 
 $router->group("error");
 $router->get("/{errcode}", "HomeController:error");
